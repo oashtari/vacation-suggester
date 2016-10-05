@@ -92,10 +92,12 @@ $(document).ready(function(){
     var suggestion = vacation(name,continent,landscape,social,age);
 
     event.preventDefault();
-    // console.log(suggestion);
+    console.log(suggestion);
 
-    $(div.suggestions).text(suggestion);
-    $(.suggestions).show(suggestion);
+    // "#" + suggestion
+    var finalResult = "#" + suggestion;
+    // $("div").text(suggestion);
+    $(finalResult).show();
   })
 
 })

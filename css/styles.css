@@ -1,6 +1,17 @@
-/*#estonia, #norway, #thailand, #myanmar, #brazil, #chile, #taste {
+#estonia, #norway, #thailand, #myanmar, #brazil, #chile, #taste {
+  display: none;
+  font-size: 30px;
+}
+#taste {
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+img {
+  height: 500px;
+  width: 500px;
+
+}
+/*.suggestions {
   display: none;
 }*/
-#suggestions {
-  display: none;
-}
