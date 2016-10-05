@@ -36,7 +36,7 @@ var vacation = function(name,continent,landscape,social,age) {
 
       } else if (landscape === "woods") {
           if (social === "introvert") {
-            return "patagonia";
+            return "chile";
           } else if (social === "extrovert") {
             return "taste";
           }
@@ -94,9 +94,8 @@ $(document).ready(function(){
     event.preventDefault();
     console.log(suggestion);
 
-    // "#" + suggestion
+
     var finalResult = "#" + suggestion;
-    // $("div").text(suggestion);
     $(finalResult).show();
   })
 
