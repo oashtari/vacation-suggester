@@ -7,17 +7,21 @@ var vacation = function(name,continent,landscape,social,age) {
           return "norway";
 
         } else if (social === "extrovert") {
-          console.log("estonia");
+          return "estonia";
         }
 
       } else if (landscape === "woods") {
           if (social === "introvert") {
+            return "norway";
           } else if (social === "extrovert") {
+            return "taste";
           }
 
       } else if (landscape === "city"){
           if (social === "introvert") {
+            return "taste";
           } else if (social === "extrovert") {
+            return "brazil"
           }
 
       }
@@ -25,17 +29,23 @@ var vacation = function(name,continent,landscape,social,age) {
     } else if (continent === "sAmerica") {
       if (landscape === "beach") {
         if (social === "introvert") {
+          return "taste";
         } else if (social === "extrovert") {
+          return "brazil";
         }
 
       } else if (landscape === "woods") {
           if (social === "introvert") {
+            return "patagonia";
           } else if (social === "extrovert") {
+            return "taste";
           }
 
       } else if (landscape === "city"){
           if (social === "introvert") {
+            return "taste";
           } else if (social === "extrovert") {
+            return "brazil";
           }
 
       }
@@ -43,17 +53,23 @@ var vacation = function(name,continent,landscape,social,age) {
     } else if (continent === "asia") {
       if (landscape === "beach") {
         if (social === "introvert") {
+          return "thailand";
         } else if (social === "extrovert") {
+          return "taste";
         }
 
       } else if (landscape === "woods") {
           if (social === "introvert") {
+            return "myanmar";
           } else if (social === "extrovert") {
+            return "taste";
           }
 
       } else if (landscape === "city"){
           if (social === "introvert") {
+            return "taste";
           } else if (social === "extrovert") {
+            return "taste";
           }
       }
     }
@@ -76,10 +92,10 @@ $(document).ready(function(){
     var suggestion = vacation(name,continent,landscape,social,age);
 
     event.preventDefault();
+    // console.log(suggestion);
 
-    // $(#suggestion).text(suggestion);
-    // $(#suggestion).show();
+    $(div.suggestions).text(suggestion);
+    $(.suggestions).show(suggestion);
   })
 
 })
-console.log(vacation);
